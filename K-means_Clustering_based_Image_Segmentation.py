@@ -9,10 +9,11 @@ plt.show()
 img_reshape = img.reshape(img.shape[0]*img.shape[1], img.shape[2])
 print(img_reshape.shape)
 
-kmeans = KMeans(n_clusters=5, random_state=0).fit(img_reshape)
+x=int(input("Enter the number of clusters:"))
+kmeans = KMeans(n_clusters=x, random_state=0).fit(img_reshape)
 img2show = kmeans.cluster_centers_[kmeans.labels_]
-cluster_pic = img2show.reshape(img.shape[0], img.shape[1], img.shape[2])
-plt.imshow(cluster_pic)
+img = img2show.reshape(img.shape[0], img.shape[1], img.shape[2])
+plt.imshow(img)
 plt.show()
 
 '''
