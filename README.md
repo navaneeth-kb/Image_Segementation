@@ -1,0 +1,1 @@
+Image segmentation is a fundamental technique in computer vision that involves dividing an image into meaningful parts. It’s like breaking down an image into smaller pieces, like objects, groups of similar characteristics, or even individual pixels.
